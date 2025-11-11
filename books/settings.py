@@ -24,12 +24,14 @@ FEED_URI = "books.jl"
 ROBOTSTXT_OBEY = False
 
 # Concurrency and throttling settings
-#CONCURRENT_REQUESTS = 16
-CONCURRENT_REQUESTS_PER_DOMAIN = 1
-DOWNLOAD_DELAY = 1
+CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS_PER_DOMAIN = 32
+DOWNLOAD_DELAY = 0
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = False
+
+CONCURRENT_REQUESTS_PER_IP = 32
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
